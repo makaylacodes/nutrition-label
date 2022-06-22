@@ -1,3 +1,47 @@
+html{
+    font-size:16px;
+}
+
 body{
-    font-family:Open Sans, sans-serif;
+    font-family:'Open Sans', sans-serif;
+  }
+
+.label{
+    border: 2px solid black;
+    width:270px;
+
+    /*Centers the Nutrition facts box*/
+    margin: 20px auto;
+    padding: 0 7px;
+  }
+
+  /*Removes the default border the browser provides. */
+*{
+    box-sizing: border-box;
+}
+
+header h1{
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: .15px;
+  }
+
+  /*Removes the margins*/
+p{
+    margin: 0 0 0 0; 
+  }
+
+.divider{
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+/*Makes text bold*/
+.bold{
+    font-weight:800;
+  }
+
+  /*Pushes text to the right*/
+.right{
+    float:right;
   }
