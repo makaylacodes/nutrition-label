@@ -1,3 +1,7 @@
+  /*Removes the default border the browser provides. */
+*{
+    box-sizing: border-box;
+}
 html{
     font-size:16px;
 }
@@ -15,10 +19,7 @@ body{
     padding: 0 7px;
   }
 
-  /*Removes the default border the browser provides. */
-*{
-    box-sizing: border-box;
-}
+
 
 header h1{
     text-align: center;
@@ -28,20 +29,74 @@ header h1{
 
   /*Removes the margins*/
 p{
-    margin: 0 0 0 0; 
+    margin: 0; 
   }
 
 .divider{
     border-bottom: 1px solid #888989;
     margin: 2px 0;
+    /*pushes divider and any following content down below the float text*/
+    clear:right;
 }
 
 /*Makes text bold*/
 .bold{
     font-weight:800;
   }
+  
 
   /*Pushes text to the right*/
 .right{
     float:right;
+    padding: .55%;
+  }
+
+  /*This is the black bar that separates nutrition facts header from the rest*/
+.lg{
+    height:8px;
+}
+.lg, .md{
+    background-color:black;
+    border:0;
+}
+ /*creates a bar*/
+ .md{
+    height:5px;
+  }
+.sm-text{
+    font-size: .90rem;
+}
+
+.calories-info h1{
+    margin: -5px -2px;
+    overflow:hidden;
+  }
+.calories-info span{
+    font-size:1.2em;
+    /*shifts the text into place*/
+    margin-top:-7px;
+  }
+
+ 
+
+.indent{
+    margin-left:1em;
+  }
+  .dbl-indent{
+    margin-left:2em;
+  }
+
+  /*Selects all daily-value elements without an id of no-divider*/
+.daily-value p:not(.no-divider){
+    border-bottom: 1px solid #888989;
+}
+
+/*Double indent. It's used for subcategories like added sugars*/
+
+
+  .note{
+    font-size:.7rem;
+    margin:5px 0;
+    padding:0 8px;
+    text-indent:-8px;
   }
