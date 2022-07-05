@@ -1,5 +1,6 @@
 
-# nutrition-label
+
+# Typography in Web Design
 
 This is a learning-based project written in CSS. 
 
